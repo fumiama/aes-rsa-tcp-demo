@@ -61,3 +61,7 @@ In this demo, the [RSA Private Key](rsa_2048_private_x509.b14) and AES key is sa
 In the file [utils/rsa.go](utils/rsa.go), I use `go:linkname` to hook the private function of `crypto/rsa` library and realized a **self-made** signature algorithm that can get the decoding result but not just verify whether it is valid (unlike the official method `rsa.VerifyPKCS1v15`).
 ## Demo
 See the video below.
+
+
+https://github.com/fumiama/aes-rsa-tcp-demo/assets/41315874/e4f6522b-e147-4a2f-add3-3a2abb90e96b
+
