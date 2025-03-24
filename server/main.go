@@ -13,9 +13,10 @@ import (
 	"net"
 	"net/netip"
 	"os"
-	"socket/utils"
 	"strconv"
 	"sync/atomic"
+
+	"github.com/fumiama/aes-rsa-tcp-demo/utils"
 
 	base14 "github.com/fumiama/go-base16384"
 )

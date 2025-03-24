@@ -10,8 +10,9 @@ import (
 	"fmt"
 	"net"
 	"net/netip"
-	"socket/utils"
 	"time"
+
+	"github.com/fumiama/aes-rsa-tcp-demo/utils"
 
 	base14 "github.com/fumiama/go-base16384"
 )
@@ -104,10 +105,6 @@ func main() {
 		if err != nil {
 			fmt.Println("Read packet from server", conn.RemoteAddr(), "error:", err)
 			return
-		}
-		if err != nil {
-			fmt.Println("Receive from server", conn.RemoteAddr(), "error:", err)
-			continue
 		}
 		data, err = utils.RSAPublicKeyDecrypt(rsapubk, packet.Dat)
 		if err != nil {

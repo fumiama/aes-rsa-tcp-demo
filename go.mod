@@ -1,4 +1,4 @@
-module socket
+module github.com/fumiama/aes-rsa-tcp-demo
 
 go 1.17
 
